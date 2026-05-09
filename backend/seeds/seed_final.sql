@@ -1,0 +1,35 @@
+SET SQL_SAFE_UPDATES = 0;
+
+DELETE FROM Produit;
+
+INSERT INTO Produit (nom, description, prix, stock, image, categorie) VALUES
+('Laptop HP Pavilion 15', 'Ordinateur portable performant pour le telework.', 899.99, 12, 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&h=500&fit=crop', 'Informatique'),
+('Ecran 27 4K UHD', 'Moniteur haute resolution pour le multitask.', 349.99, 10, 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&h=500&fit=crop', 'Informatique'),
+('Tablette 10.4 Android', 'Tablette tactile pour navigation et streaming.', 239.99, 14, 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&h=500&fit=crop', 'Informatique'),
+('Routeur Wi-Fi 6', 'Routeur haute performance pour connexion stable.', 129.99, 16, 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=600&h=500&fit=crop', 'Informatique'),
+('SSD 1To NVMe', 'Disque SSD rapide pour demarrages instantanes.', 119.99, 28, 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=600&h=500&fit=crop', 'Informatique'),
+('Imprimante multifonction', 'Imprimante 3-en-1 impression scan copie.', 159.99, 9, 'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=600&h=500&fit=crop', 'Informatique'),
+('Souris Logitech MX Master 3', 'Souris ergonomique sans fil.', 79.99, 25, 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&h=500&fit=crop', 'Accessoires'),
+('Clavier mecanique RGB', 'Clavier gaming retroeclaire.', 119.99, 18, 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&h=500&fit=crop', 'Accessoires'),
+('Sac a dos gaming', 'Sac renforce pour portable.', 69.99, 30, 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=500&fit=crop', 'Accessoires'),
+('Montre connectee FitPro', 'Montre intelligente suivi activite.', 129.99, 15, 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=500&fit=crop', 'Accessoires'),
+('Station de charge USB-C', 'Station multiappareils.', 49.99, 35, 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&h=500&fit=crop', 'Accessoires'),
+('Tapis de souris RGB', 'Tapis gaming eclairage RGB.', 29.99, 26, 'https://images.unsplash.com/photo-1616763355548-1b606f439f86?w=600&h=500&fit=crop', 'Accessoires'),
+('Casque Bluetooth ANC', 'Casque reduction bruit active.', 149.99, 20, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=500&fit=crop', 'Audio'),
+('Enceinte portable JBL', 'Enceinte Bluetooth etanche.', 89.99, 22, 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&h=500&fit=crop', 'Audio'),
+('Casque gaming HyperX', 'Casque microphone pour jeux.', 99.99, 16, 'https://images.unsplash.com/photo-1599669454699-248893623440?w=600&h=500&fit=crop', 'Audio'),
+('Haut-parleur stereo Bose', 'Systeme stereo haut gamme.', 199.99, 8, 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&h=500&fit=crop', 'Audio'),
+('Ecouteurs sans fil TWS', 'Ecouteurs true wireless charge.', 49.99, 40, 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&h=500&fit=crop', 'Audio'),
+('Lampe LED de bureau', 'Lampe intensite variable.', 39.99, 42, 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&h=500&fit=crop', 'Maison'),
+('Cafetiere automatique', 'Cafetiere broyeur integre.', 229.99, 6, 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=500&fit=crop', 'Maison'),
+('Thermostat intelligent', 'Thermostat connecte domotique.', 89.99, 11, 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop', 'Maison'),
+('Ventilateur de plafond', 'Ventilateur telecommande.', 69.99, 9, 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&h=500&fit=crop', 'Maison'),
+('Grille-pain numerique', 'Grille-pain affichage digital.', 29.99, 24, 'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&h=500&fit=crop', 'Maison'),
+('Chaise ergonomique', 'Chaise bureau support lombaire.', 189.99, 7, 'https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=600&h=500&fit=crop', 'Bureau'),
+('Chaussures de course', 'Chaussures sport running.', 99.99, 20, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=500&fit=crop', 'Sport'),
+('Montre GPS sportive', 'Montre GPS tracker activites.', 179.99, 12, 'https://images.unsplash.com/photo-1544117519-31a4b719223d?w=600&h=500&fit=crop', 'Sport'),
+('Tapis de yoga', 'Tapis antiderapant yoga.', 39.99, 18, 'https://images.unsplash.com/photo-1601925228049-40b6f5a29de8?w=600&h=500&fit=crop', 'Sport'),
+('Halteres reglables', 'Set halteres musculation domicile.', 149.99, 10, 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=500&fit=crop', 'Sport'),
+('Ceinture de massage', 'Ceinture massante chauffante.', 59.99, 14, 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=600&h=500&fit=crop', 'Sport'),
+('Smartphone Galaxy S24', 'Smartphone appareil photo qualite.', 999.99, 8, 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&h=500&fit=crop', 'Téléphonie'),
+('Appareil photo hybride', 'Appareil compact photos videos.', 749.99, 5, 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=500&fit=crop', 'Photo');
