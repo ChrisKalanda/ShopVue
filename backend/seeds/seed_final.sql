@@ -28,7 +28,7 @@ INSERT INTO produit (nom, description, prix, stock, image, categorie) VALUES
 ('Chaise ergonomique', 'Chaise bureau support lombaire.', 189.99, 7, 'https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=600&h=500&fit=crop', 'Bureau'),
 ('Chaussures de course', 'Chaussures sport running.', 99.99, 20, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=500&fit=crop', 'Sport'),
 ('Montre GPS sportive', 'Montre GPS tracker activites.', 179.99, 12, 'https://images.unsplash.com/photo-1544117519-31a4b719223d?w=600&h=500&fit=crop', 'Sport'),
-('Tapis de yoga', 'Tapis antiderapant yoga.', 39.99, 18, 'https://images.unsplash.com/photo-1601925228049-40b6f5a29de8?w=600&h=500&fit=crop', 'Sport'),
+('Tapis de yoga', 'Tapis antiderapant yoga.', 39.99, 18, 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=500&fit=crop', 'Sport'),
 ('Halteres reglables', 'Set halteres musculation domicile.', 149.99, 10, 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=500&fit=crop', 'Sport'),
 ('Ceinture de massage', 'Ceinture massante chauffante.', 59.99, 14, 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=600&h=500&fit=crop', 'Sport'),
 ('Smartphone Galaxy S24', 'Smartphone appareil photo qualite.', 999.99, 8, 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&h=500&fit=crop', 'Téléphonie'),

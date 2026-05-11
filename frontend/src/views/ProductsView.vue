@@ -5,8 +5,8 @@
         <div>
           <h1 class="shop-header__title">{{ $t('shop_title') }}</h1>
           <p class="shop-header__sub">
-            {{ produits.length }} {{ produits.length !== 1 ? $t('shop_products_pl') : $t('shop_products') }}
-            {{ produits.length !== 1 ? $t('shop_available_pl') : $t('shop_available') }}
+            {{ produits.length }} {{ produits.length !== 1 ? $t('shop_products') : $t('shop_product') }}
+            {{ produits.length !== 1 ? $t('shop_availables') : $t('shop_available') }}
           </p>
         </div>
         <div class="shop-search">
@@ -133,16 +133,6 @@ export default {
       this.toastTimer = setTimeout(() => { this.toast = false; }, 2500);
     },
     handleImageError(e) { e.target.src = this.defaultImage; }
-  },
-  // Computed properties for translated text that depend on counts
-  computed: {
-    uniqueCategories() {
-      return [...new Set(this.allProduits.map(p => p.categorie))].sort();
-    },
-    shop_products() { return this.$t('shop_products'); },
-    shop_products_pl() { return this.$t('shop_products_pl') || this.$t('shop_products'); },
-    shop_available() { return this.$t('shop_available'); },
-    shop_available_pl() { return this.$t('shop_available_pl') || this.$t('shop_available'); }
   },
   watch: {
     '$route.query'() {

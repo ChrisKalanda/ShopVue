@@ -78,6 +78,10 @@ const t = {
     shop_low_stock: 'Plus que',
     shop_out_of_stock: 'Rupture',
     shop_unit: 'unité',
+    shop_product: 'produit',
+    shop_products: 'produits',
+    shop_available: 'disponible',
+    shop_availables: 'disponibles',
 
     // Cart
     cart_title: 'Mon Panier',
@@ -252,6 +256,10 @@ const t = {
     shop_low_stock: 'Only',
     shop_out_of_stock: 'Out of stock',
     shop_unit: 'unit',
+    shop_product: 'product',
+    shop_products: 'products',
+    shop_available: 'available',
+    shop_availables: 'available',
 
     // Cart
     cart_title: 'My Cart',
