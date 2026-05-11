@@ -464,6 +464,13 @@ mysql -u root -p ecommerce < backend/seeds/seed_final.sql
 
 ---
 
+
+## Live Demo
+
+[View the live project](https://shop-vue-opal.vercel.app/)
+
+---
+
 ## Author
 
 **Chris Kalanda** — Web Application Development  
