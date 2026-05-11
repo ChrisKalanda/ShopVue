@@ -18,7 +18,7 @@ export async function register(req, res) {
     const hashedPassword = await bcrypt.hash(mot_de_passe, 10);
 
     await pool.query(
-      `INSERT INTO Client (nom, prenom, email, mot_de_passe, telephone, adresse, ville, code_postal)
+      `INSERT INTO client (nom, prenom, email, mot_de_passe, telephone, adresse, ville, code_postal)
        VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
       [nom, prenom, email, hashedPassword, telephone || null, adresse || null, ville || null, code_postal || null]
     );
