@@ -4,7 +4,7 @@ export async function getProfil(req, res) {
   try {
     const [rows] = await pool.query(
       `SELECT id_client, nom, prenom, email, telephone, adresse, ville, code_postal, date_creation
-       FROM Client
+       FROM client
        WHERE id_client = ?`,
       [req.client.id_client]
     );

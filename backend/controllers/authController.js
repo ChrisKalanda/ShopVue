@@ -10,7 +10,7 @@ export async function register(req, res) {
       return res.status(400).json({ message: 'Veuillez remplir les champs obligatoires.' });
     }
 
-    const [existing] = await pool.query('SELECT id_client FROM Client WHERE email = ?', [email]);
+    const [existing] = await pool.query('SELECT id_client FROM client WHERE email = ?', [email]);
     if (existing.length > 0) {
       return res.status(400).json({ message: 'Cet email est déjà utilisé.' });
     }
@@ -33,7 +33,7 @@ export async function login(req, res) {
   try {
     const { email, mot_de_passe } = req.body;
 
-    const [rows] = await pool.query('SELECT * FROM Client WHERE email = ?', [email]);
+    const [rows] = await pool.query('SELECT * FROM client WHERE email = ?', [email]);
     if (rows.length === 0) {
       return res.status(404).json({ message: 'Utilisateur introuvable.' });
     }
