@@ -5,7 +5,7 @@ export async function getAllProduits(req, res) {
     const search = req.query.search || '';
     const categorie = req.query.categorie || '';
 
-    let query = 'SELECT * FROM Produit WHERE 1=1';
+    let query = 'SELECT * FROM produit WHERE 1=1';
     const params = [];
 
     if (search) {
@@ -30,7 +30,7 @@ export async function getAllProduits(req, res) {
 
 export async function getProduitById(req, res) {
   try {
-    const [rows] = await pool.query('SELECT * FROM Produit WHERE id_produit = ?', [req.params.id]);
+    const [rows] = await pool.query('SELECT * FROM produit WHERE id_produit = ?', [req.params.id]);
 
     if (rows.length === 0) {
       return res.status(404).json({ message: 'Produit introuvable.' });
@@ -51,7 +51,7 @@ export async function createProduit(req, res) {
     }
 
     const [result] = await pool.query(
-      `INSERT INTO Produit (nom, description, prix, stock, image, categorie)
+      `INSERT INTO produit (nom, description, prix, stock, image, categorie)
        VALUES (?, ?, ?, ?, ?, ?)`,
       [nom, description || null, prix, stock, image || null, categorie || null]
     );
