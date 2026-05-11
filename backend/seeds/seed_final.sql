@@ -1,8 +1,8 @@
 SET SQL_SAFE_UPDATES = 0;
 
-DELETE FROM Produit;
+DELETE FROM produit;
 
-INSERT INTO Produit (nom, description, prix, stock, image, categorie) VALUES
+INSERT INTO produit (nom, description, prix, stock, image, categorie) VALUES
 ('Laptop HP Pavilion 15', 'Ordinateur portable performant pour le telework.', 899.99, 12, 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&h=500&fit=crop', 'Informatique'),
 ('Ecran 27 4K UHD', 'Moniteur haute resolution pour le multitask.', 349.99, 10, 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&h=500&fit=crop', 'Informatique'),
 ('Tablette 10.4 Android', 'Tablette tactile pour navigation et streaming.', 239.99, 14, 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&h=500&fit=crop', 'Informatique'),
