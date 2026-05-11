@@ -73,6 +73,10 @@ export default {
   color: #ffffff;
 }
 
+.login-top .text-muted {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
 .login-logo {
   font-size: 2rem;
   font-weight: 800;
