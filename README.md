@@ -478,4 +478,4 @@ GitHub: [@ChrisKalanda](https://github.com/ChrisKalanda)
 
 ---
 
-*ShopVue — Built with Vue.js 3 + Angular + Node.js + MySQL*
+*ShopVue — Built with Vue.js 3 + Node.js + MySQL*
